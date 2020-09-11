@@ -79,3 +79,17 @@ print(miDiccionario4['Anillos'])
 print(miDiccionario4.keys())
 print(miDiccionario4.values())
 print(len(miDiccionario4))
+
+# --------------------------------------Bucles If--------------------------------------
+
+print('Programa de evaluacion notas de alumnos')
+
+notaAlumno = int(input('Introduce la nota del alumno: ')) #Los inputs siempre seran strings
+
+def evaluacion(nota):
+    valoracion = 'Aprobado'
+    if nota < 5:
+        valoracion = 'Reprobado'
+    return valoracion               #Retorna el resultado de toda la funcion
+
+print(evaluacion(notaAlumno)) 
